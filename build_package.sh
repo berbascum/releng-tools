@@ -390,6 +390,7 @@ fi
 eval debuild \
 	--set-envvar="DROIDIAN_VCS_URL=${REMOTE}" \
 	--set-envvar="DROIDIAN_VCS_REV=${COMMIT}" \
+	--set-envvar="BUILD_PATH_CLANG_CUSTOM=${BUILD_PATH_CLANG_CUSTOM}" \
 	--prepend-path="/usr/lib/releng-tools/wrappers" \
 	"${ARGS}"
 
